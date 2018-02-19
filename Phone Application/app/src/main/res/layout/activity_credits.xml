@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="info.androidhive.navigationdrawer.activity.CreditsActivity">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:paddingLeft="16dp"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#a44646"
+        card_view:cardCornerRadius="4dp">
+
+    <LinearLayout
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/logo"
+                android:layout_width="104dp"
+                android:layout_height="110dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textSize="25dp"
+            android:textColor="#3d3d3d"
+            android:text="Available Credits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_marginTop="7dp"
+                android:textSize="25dp"
+                android:textColor="#3d3d3d"
+                android:text="Rs "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/balance"
+                android:textStyle="bold"
+                android:textSize="50dp"
+                android:textColor="#3d3d3d"
+                android:text="1000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/rupeebill"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.24" />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+        <Button
+            android:id="@+id/callcred"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:id="@+id/refresh"
+            android:layout_alignTop="@+id/callcred"
+            android:layout_alignStart="@+id/balance"
+            android:visibility="invisible"
+            android:layout_alignLeft="@+id/balance" />
+
+    </android.support.v7.widget.CardView>
+
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Balance"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="141dp"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=""
+        android:id="@+id/balance"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textIsSelectable="true" />
+
+    <Button
+        android:id="@+id/callcred"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/refresh"
+        android:layout_alignTop="@+id/callcred"
+        android:layout_alignStart="@+id/balance"
+        android:visibility="invisible"
+        android:layout_alignLeft="@+id/balance" />
+-->
+</RelativeLayout>

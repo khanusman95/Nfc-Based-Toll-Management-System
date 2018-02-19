@@ -1,0 +1,94 @@
+<RelativeLayout
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Time:"/>
+        <TextView
+            android:layout_marginLeft="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="End Time:"/>
+        <TextView
+            android:layout_marginLeft="36dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date:"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:text="10:02 pm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/start_time"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:text="10:02 pm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/end_time"/>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:text="10/10/2017"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/trip_date"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rs"/>
+        <TextView
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="2dp"
+            android:id="@+id/total_fare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

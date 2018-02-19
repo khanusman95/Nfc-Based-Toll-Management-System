@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:background="@drawable/photobg"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp" />
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="16dp"
+            android:paddingTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:background="@color/menu_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="25dp"
+                    android:text="Name:"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textAlignment="viewEnd"
+                    android:layout_gravity="end"
+                    android:textSize="20dp"
+                    android:text="Usman"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:background="@color/menu_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="25dp"
+                    android:text="Email:"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textAlignment="viewEnd"
+                    android:layout_gravity="end"
+                    android:textSize="20dp"
+                    android:text="123@mail.com"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:background="@color/menu_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="25dp"
+                    android:text="Plaza:"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/plazaid"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textAlignment="viewEnd"
+                    android:layout_gravity="end"
+                    android:textSize="20dp"
+                    android:text="PlazaID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:background="@color/menu_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="25dp"
+                    android:text="Booth:"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/boothid"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textAlignment="viewEnd"
+                    android:layout_gravity="end"
+                    android:textSize="20dp"
+                    android:text="BoothId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:paddingRight="26dp"
+        android:paddingLeft="26dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginTop="170dp"
+        android:layout_marginLeft="85dp"
+        android:textSize="30dp"
+        android:text="Information"
+        android:textColor="@color/white_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="175dp"
+            android:layout_marginBottom="15dp" />
+
+        <TextView
+            android:id="@+id/plazaid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PlazaId"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textAlignment="center"
+            android:layout_centerVertical="true"
+            android:layout_alignEnd="@+id/boothid"
+            android:layout_marginTop="15dp" />
+
+        <TextView
+            android:id="@+id/boothid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BoothId"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textAlignment="center"
+            android:layout_below="@+id/plazaid"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Operator Name:"
+            android:id="@+id/nameLabel"
+            android:layout_alignBottom="@+id/name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="42dp"
+            android:textStyle="bold"
+            android:textColor="#2d2d2d"
+            android:textSize="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Plaza ID:"
+            android:id="@+id/plazaLabel"
+            android:textStyle="bold"
+            android:textColor="#2d2d2d"
+            android:textSize="25dp"
+            android:layout_below="@+id/name"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Booth ID:"
+            android:id="@+id/boothLabel"
+            android:textStyle="bold"
+            android:textColor="#2d2d2d"
+            android:textSize="25dp"
+            android:layout_below="@+id/plazaid"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp" />
+
+
+    </RelativeLayout>-->

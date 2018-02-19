@@ -1,0 +1,101 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="info.androidhive.navigationdrawer.fragment.HomeFragment">
+
+<!--
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:alpha="0.3"
+        android:src="@drawable/ic_home_black_24dp" />
+-->
+
+<!--    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/startNfc"
+        android:text="Tap To Pay"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/historybtn"
+        android:text="history"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>-->
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/startNfc"
+                android:background="@mipmap/ic_tap"
+                android:layout_width="150dp"
+                android:layout_height="150dp" />
+            <Button
+                android:id="@+id/historybtn"
+                android:layout_marginTop="40dp"
+                android:background="@mipmap/ic_history"
+                android:layout_width="150dp"
+                android:layout_height="150dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_balance"
+                android:background="@mipmap/ic_balance"
+                android:layout_width="150dp"
+                android:layout_height="150dp" />
+            <Button
+                android:id="@+id/btn_recharge"
+                android:layout_marginTop="40dp"
+                android:background="@mipmap/ic_recharge"
+                android:layout_width="150dp"
+                android:layout_height="150dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_howto"
+        android:background="@mipmap/howto"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="55dp" />
+
+</FrameLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="info.androidhive.navigationdrawer.activity.LoginActivity">
+
+    <ImageView
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo"
+        android:layout_width="205dp"
+        android:layout_height="183dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/etusername"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:paddingLeft="5dp"
+        android:background="#fff"
+        android:inputType="textEmailAddress"
+        android:hint="Enter Email" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/etpassword"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:paddingLeft="5dp"
+        android:background="#fff"
+        android:hint="Enter Password" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn"
+        android:text="Login"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+    <TextView
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/tvreg"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:text="Guest? Register here"/>
+
+</LinearLayout>
